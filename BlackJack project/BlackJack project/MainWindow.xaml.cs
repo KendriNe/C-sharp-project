@@ -23,6 +23,24 @@ namespace BlackJack_project
         public MainWindow()
         {
             InitializeComponent();
+            BtnHit.IsEnabled = false;
+            BtnStand.IsEnabled = false;
+        }
+
+        private void BtnDeel_Click(object sender, RoutedEventArgs e)
+        {
+            BtnHit.IsEnabled = true;   
+            BtnStand.IsEnabled = true;
+        }
+
+        private void BtnHit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnStand_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
